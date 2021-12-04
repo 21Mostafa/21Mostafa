@@ -1,23 +1,49 @@
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-
+import Header from './Header/Header';
+import Main from './Main/Main/Main';
+import { Route, Router, Routes } from 'react-router';
+import About from './Main/About/About';
+import Services from './Main/Services/Services';
+import Experience from './Main/Experience/Experience';
+import Works from './Main/Works/Works';
+import Contact from './Main/Contact/Contact';
+import Togather from './Togather/Togather';
+import Pricing_Plan from './Main/Pricing_Plan/Pricing_Plan';
+import "./tailwind.css"
+ 
 function App() {
+   
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container ">
+         
+          
+         <Header />
+     
+   
+   
+    
+
+      
+      
+
+      <BrowserRouter>
+      <Routes>
+      
+        <Route path="/" element={ <Main />} />
+        <Route path="/about" element={<About/>}/>
+        <Route path="/Services" element={<Services/>}/>  
+        <Route path="/Experience" element={<Experience/>}/>
+        <Route path="/Works" element={<Works/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Pricing_Plan" element={<Pricing_Plan/>}/>
+        
+         
+        
+      </Routes>
+    </BrowserRouter>
+
     </div>
   );
 }

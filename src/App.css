@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -36,3 +37,26 @@
     transform: rotate(360deg);
   }
 }
+
+.wait{
+  background-color: rgba(128, 128, 128, 0.048);
+  font-family: Gwe;
+   
+} 
+@font-face{ 
+  font-family: 'Corinthia', cursive;
+  font-family: 'Gwendolyn', cursive;
+  font-family: 'Meow Script', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.container {
+  font-family: 'Corinthia', cursive;
+font-family: 'Gwendolyn', cursive;
+font-family: 'Meow Script', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif;
+}
+
+ 

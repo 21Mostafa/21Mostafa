@@ -1,0 +1,31 @@
+footer{
+    float: center;
+} 
+ 
+ 
+ .fifa{
+    border: 1px   solid #1212db41;
+border-radius :15px; 
+ 
+
+ }
+ .fifa1{
+background-color:rgba(0, 0, 0, 0.582);
+box-shadow: 3px 3px   2px   2px #07811b42;
+border: 1px   solid #1212db41;
+ }
+ .fifa2{
+    background-color:rgba(255, 255, 255, 0.63);
+    box-shadow: 3px   2px 4px 2px rgba(48, 20, 204, 0.863);
+border: 1px   solid rgba(167, 167, 16, 0.63);
+ }
+ .fifa3{
+    background-color:rosybrown;
+    box-shadow: 5px 3px 3px  2px rgba(143, 4, 124, 0.616);
+border: 1px   solid rosybrown;
+
+ }
+ .Hello{
+     color: rgb(15, 204, 211);
+     text-decoration: none;
+ }
