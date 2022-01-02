@@ -6,7 +6,23 @@ const Contact = () => {
   var today = new Date(),
     date = today.getFullYear()  ;
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+  const onSubmit = data => {
+     fetch("http://localhost:5000/Contract",{
+       method: "POST",
+     headers: {
+      "content-type": "application/json"     
+     },
+     body: JSON.stringify(data)
+     })
+     .then(res => res.json())
+     .then(result =>{
+       if(result){
+         alert("Your Information is secure")
+       }
+     })
+     window.location.reload(false);
+
+  }
 
   console.log(watch("example"));
     return (
@@ -30,14 +46,14 @@ const Contact = () => {
      <div className="col-md-6">
      <div class="mb-3">
    
-   <input {...register("Name")}  type="text" class="form-control rcorners"placeholder="Your Name"   id="name"/>
+   <input {...register("Name")}    type="text" class="form-control rcorners"placeholder="Your Name"   id="name" required/>
        
      </div></div>
       
      <div className="col-md-6">
      <div class="mb-3">
    
-   <input {...register("Email")}  type="email" class="form-control rcorners" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp"/>
+   <input {...register("Email")}  type="email" class="form-control rcorners" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp" required/>
    
  </div>
      </div>
@@ -46,11 +62,11 @@ const Contact = () => {
    
   <div class="mb-3">
     
-    <input {...register("Subject")}  type="text" class="form-control rcorners" placeholder="Subject" id="subject"/>
+    <input {...register("Subject")}  type="text" class="form-control rcorners" required placeholder="Subject" id="subject"/>
   </div>
   <div class="mb-3">
   
-  <textarea class="form-control rcorners" {...register("Messages")} placeholder="Messages" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea class="form-control rcorners" {...register("Messages")} placeholder="Messages" id="exampleFormControlTextarea1" rows="3" required></textarea>
 </div>
   <button type="submit" class="btn btn-danger rcorners ">Send Messages</button>
 </form>

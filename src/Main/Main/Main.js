@@ -1,12 +1,14 @@
 import React from 'react';
-
+import myPic from './mypic.jpeg'
+import About from './../About/About';
 const Main = () => {
 
     return (
-        <div className="m-5 p-5 App ">
+        <section>
+            <div className="m-5 p-5 App ">
             <br /><br /><br />
-            <img src='./mypic.jpeg' class=" rounded mx-auto d-block" width="200px" /><br />
-            <h4>Mostafa Kamal</h4>
+            <img src={myPic} class=" rounded mx-auto d-block" width="200px" /><br />
+            <h4> <b>Mostafa Kamal</b> </h4>
             <h6>I'm Frontend developer</h6>
 
              <br />
@@ -26,7 +28,8 @@ const Main = () => {
             <br />  
             
         </div>
-
+        <About/>
+        </section>
 
     );
 };

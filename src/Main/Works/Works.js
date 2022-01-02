@@ -1,4 +1,5 @@
 import React from 'react';
+import Pricing_Plan from './../Pricing_Plan/Pricing_Plan';
 const style={
     textDecoration:"none",
         color: "white"
@@ -6,7 +7,7 @@ const style={
 
 const Works = () => {
     return (
-            <section className="  m-5  ">
+            <section>
                   <div className="container m-5 wait p-5 ">  
             <h3>My Recent Works</h3>
             
@@ -19,6 +20,7 @@ const Works = () => {
            </div>
            
         </div>
+        <Pricing_Plan></Pricing_Plan>
             </section>
     );
 };

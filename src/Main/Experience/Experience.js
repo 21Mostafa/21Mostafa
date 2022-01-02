@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Experience.css"
+import Works from './../Works/Works';
 
  
 const Experience = () => {
@@ -13,12 +14,12 @@ const Experience = () => {
 
     return (
         <section className=" ">
-             <div className="container mt-5 p-5">
+             <div className="container      p-5">
             <h2>Experience</h2>
             
-            <div className="row m-4">
-                
-                <div className="col-md-5  m-5 box">
+            <div className="row m-4  ">
+            
+                <div className="col-md-5 wait   p-3 m-3  box">
                    <ul>
                     
                     <b><li><img src="https://img.icons8.com/external-glyph-geotatah/20/000000/external-academic-knowledge-management-glyph-glyph-geotatah.png"/> Bachelor’s  Degree </li> </b> <footer>Institute: Dhaka University, Dhaka, Bangladesh  <br />(Future) 
@@ -41,8 +42,9 @@ const Experience = () => {
                     
                     
                     </ul></div>
-                   
-                <div className="col-md-5   m-5 box"> 
+                    
+                    <div className="col-md-1  "></div>
+                <div className="col-md-5 wait p-3 m-3  box"> 
                 <ul>
                     
                     <b><li><img src="https://img.icons8.com/ios/20/000000/web-shield.png"/> Web Designer  </li> </b> <footer>Web design encompasses many different skills and disciplines in the production and maintenance of websites.  
@@ -65,6 +67,7 @@ const Experience = () => {
                     </ul></div>
             </div>
         </div>
+        <Works></Works>
         </section>
     );
 };

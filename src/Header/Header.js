@@ -82,7 +82,7 @@ const Header = () => {
         </NavItem>
 
         <br /><br /><br /><br />
-        <NavItem eventKey="Contact">
+        <NavItem eventKey=" ">
             <NavIcon>
                    <a href="/"> <img src="https://img.icons8.com/ios/50/000000/marker-m.png"/></a>
             </NavIcon>
