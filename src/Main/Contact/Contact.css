@@ -2,15 +2,27 @@
      
    
   padding: 20px;
-  width: 700px auto;
-   background-color: rgba(143, 121, 121, 0.021);
+  width: 100%  !important;
+   /* background-color: rgba(143, 121, 121, 0.021); */
      
      
   }
-  
-   
-
-.aa{
+  .aa{
     text-decoration: none;
     color: greenyellow;
 }
+ 
+
+  .lio{
+    width: 200px !important;  
+     
+  }
+.message{
+  width: 400px !important;  
+}
+   
+   .ggg{
+    width: 280px !important;
+   }
+
+   

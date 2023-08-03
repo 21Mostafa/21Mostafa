@@ -26,9 +26,12 @@ const Contact = () => {
 
   console.log(watch("example"));
     return (
-        <section className="wait ">
+        <section className=' ' >
+          <h3>Get in Touch</h3>
+         <div className="   ">
+          
              <div className="  m-5 p-5  ">
-            <h3>Get in Touch</h3>
+             
             <div className="row m-5">
                 <div className="col-md-3">
                 <h4>Let's talk about everything!</h4>
@@ -46,14 +49,14 @@ const Contact = () => {
      <div className="col-md-6">
      <div class="mb-3">
    
-   <input {...register("Name")}    type="text" class="form-control rcorners"placeholder="Your Name"   id="name" required/>
+   <input {...register("Name")}      type="text" class="form-control rcorners lio"placeholder="Your Name"   id="name" required/>
        
      </div></div>
       
      <div className="col-md-6">
      <div class="mb-3">
    
-   <input {...register("Email")}  type="email" class="form-control rcorners" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp" required/>
+   <input {...register("Email")}   type="email" class="form-control rcorners lio" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp" required/>
    
  </div>
      </div>
@@ -62,11 +65,11 @@ const Contact = () => {
    
   <div class="mb-3">
     
-    <input {...register("Subject")}  type="text" class="form-control rcorners" required placeholder="Subject" id="subject"/>
+    <input {...register("Subject")}  type="text" class="form-control rcorners ggg" required placeholder="Subject" id="subject"/>
   </div>
   <div class="mb-3">
   
-  <textarea class="form-control rcorners" {...register("Messages")} placeholder="Messages" id="exampleFormControlTextarea1" rows="3" required></textarea>
+  <textarea class="form-control rcorners message " {...register("Messages")} placeholder="Messages" id="exampleFormControlTextarea1" rows="3" required></textarea>
 </div>
   <button type="submit" class="btn btn-danger rcorners ">Send Messages</button>
 </form>
@@ -77,9 +80,11 @@ const Contact = () => {
         </div>
      
  <div className="App">
- <small className="App"> <img src="https://img.icons8.com/wired/20/000000/copyright.png"/> all rights reserved {date} </small>
+ <  footer className="App"> <img src="https://img.icons8.com/wired/20/000000/copyright.png"/> all rights reserved {date} </  footer>
   
  </div><br /><br /> 
+         </div>
+         
         </section>
 );};
 

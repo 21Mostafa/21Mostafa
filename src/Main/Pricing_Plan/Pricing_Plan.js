@@ -4,10 +4,11 @@ import Contact from './../Contact/Contact';
 const Pricing_Plan = () => {
     return (
       <section>
+        <h3>Pricing Plan</h3>
             <div className="container wait m-5 p-5">
-            <h3>Pricing Plan</h3>
+             
 
-            <div className="row App m-5">
+            <div className="row App ">
                
                 <div className="col-md-3 mk m-3 p-5">
                 <img src="https://img.icons8.com/office/80/000000/light.png"/>

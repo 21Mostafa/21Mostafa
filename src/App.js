@@ -16,7 +16,7 @@ function App() {
    
 
   return (
-    <div className="container ">
+    <div className="container allinOne">
          
           
          <Header />
@@ -37,7 +37,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/Services" element={<Services/>}/>  
         <Route path="/Experience" element={<Experience/>}/>
-        <Route path="/Works" element={<Works/>}/>
+        {/* <Route path="/Works" element={<Works/>}/> */}
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/Pricing_Plan" element={<Pricing_Plan/>}/>
         

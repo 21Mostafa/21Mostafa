@@ -8,7 +8,7 @@ const style={
 const Works = () => {
     return (
             <section>
-                  <div className="container m-5 wait p-5 ">  
+                  {/* <div className="container m-5 wait p-5 ">  
             <h3>My Recent Works</h3>
             
            <div className="App m-5"> 
@@ -19,7 +19,7 @@ const Works = () => {
           <button class="btn btn-danger"> <a style={style} href="http://myportfoliobyown.xyz/">My Another Portfolio</a></button>
            </div>
            
-        </div>
+        </div> */}
         <Pricing_Plan></Pricing_Plan>
             </section>
     );

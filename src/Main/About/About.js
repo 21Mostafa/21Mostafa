@@ -3,9 +3,20 @@ import "./About.css"
 import mypiku from './mypic.jpeg'
 import Services from './../Services/Services';
 import Main from './../Main/Main';
-
+import Resume from "./Resume.pdf" 
+ 
 const About = () => {
+    const PDFfile =  "http://localhost:3000/Resume.pdf";
 
+const downloadFileAtLink = (url) =>{
+    const fileName = url.split("/").pop();
+const aTag = document.createElement("a");
+aTag.href=url;
+aTag.setAttribute("download",fileName);
+document.body.appendChild(aTag);
+aTag.click();
+aTag.remove();
+} 
 
     return (
      <section>
@@ -26,7 +37,7 @@ const About = () => {
         <small>
             My name is <b>Mostafa Kamal Mehedi</b>.  I am a Mid level Web Developer from  <b>Chandpur, Bangladesh.</b>  I have a lot of experience Building and Customizing Websites.  I'm usually do this things with  <b>Html, Css, Reactjs, Angularjs and BackEnd</b> .
         </small> <br /> <br />
-        <button class="btn btn-danger   transform hover:scale-110 motion-reduce:transform-none ...">
+        <button  onClick={() =>{downloadFileAtLink(PDFfile)}}  class="btn btn-danger   transform hover:scale-110 motion-reduce:transform-none ...">
             Download CV
         </button>
 
